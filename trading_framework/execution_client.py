@@ -14,6 +14,7 @@ class ExecutionClient(Protocol):
         :param amount: the amount to buy
         :return: None
         """
+        print(f"Order: {product_id} is bought for amount: {amount}.")
         ...
 
     def sell(self, product_id: str, amount: int):
@@ -23,4 +24,5 @@ class ExecutionClient(Protocol):
         :param amount: the amount to sell
         :return: None
         """
+        print(f"Order: {product_id} is sold for amount: {amount}.")
         ...
